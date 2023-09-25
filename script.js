@@ -3,7 +3,7 @@ const hoursTime = document.querySelector(".hours span");
 const minutesTime = document.querySelector(".minutes span");
 const secondsTime = document.querySelector(".seconds span");
 const h1 = document.querySelector("h1");
-const countDownDate = new Date("Jul 14, 2023 11:27:59").getTime();
+const countDownDate = new Date("Sep 25, 2024 11:22:59").getTime();
 
 const x = setInterval(function () {
   // Get today's date and time
@@ -25,7 +25,6 @@ const x = setInterval(function () {
   minutesTime.textContent = minutes;
   secondsTime.textContent = seconds;
 
-  // If the count down is finished, write some text
   if (distance < 0) {
     h1.textContent("launched");
   }
